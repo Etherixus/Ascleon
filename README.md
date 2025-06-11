@@ -1,21 +1,21 @@
-# 🤖 Baymax Project
+# Argo Project
 
 A full-stack interdisciplinary project to design, prototype, and build a Baymax-inspired soft healthcare robot.  
 This project combines mechanical engineering, software development, sensor integration, and AI-driven interaction.
 
 ---
 
-## 🚀 Project Goals
+## Project Goals
 
-- ✅ Design an inflatable or soft-bodied mobile robot platform
-- ✅ Implement voice recognition & interaction (natural conversation)
-- ✅ Collect and analyze simple health metrics (temperature, heart rate, etc.)
-- ✅ Develop basic autonomous movement & obstacle avoidance
-- ✅ Express personality through gestures, facial expressions, and speech
+- Design an inflatable or soft-bodied mobile robot platform
+- Implement voice recognition & interaction (natural conversation)
+- Collect and analyze simple health metrics (temperature, heart rate, etc.)
+- Develop basic autonomous movement & obstacle avoidance
+- Express personality through gestures, facial expressions, and speech
 
 ---
 
-## 🧑‍💻 Team Roles
+## Team Roles
 
 | Role | Member | Responsibilities |
 |------|--------|-------------------|
