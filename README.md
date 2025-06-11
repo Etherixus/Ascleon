@@ -1,4 +1,4 @@
-# Argo Project
+# Baymax Project
 
 A full-stack interdisciplinary project to design, prototype, and build a Baymax-inspired soft healthcare robot.  
 This project combines mechanical engineering, software development, sensor integration, and AI-driven interaction.
