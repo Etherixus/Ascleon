@@ -10,7 +10,8 @@ from openai import OpenAI
 from groq import Groq
 
 # === 🔐 Load API Keys ===
-load_dotenv()
+dotenv_path = os.path.join(os.path.dirname(__file__), '..','..', '.venv', '.env')
+load_dotenv(dotenv_path)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
