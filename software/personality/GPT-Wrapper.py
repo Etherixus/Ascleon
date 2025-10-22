@@ -1,11 +1,13 @@
+#Time and sound libraries
 import time
 import pyaudio
 import playsound3
-from gtts import gTTS  # Only used if OpenAI TTS fails
+import pyttsx3
 import speech_recognition as sr
-from dotenv import load_dotenv
 import os
 import httpx
+#AI Libraries
+from dotenv import load_dotenv
 from openai import OpenAI
 from groq import Groq
 
@@ -74,10 +76,11 @@ def speak(text):
         os.remove("speech.mp3")
     except Exception as e:
         print(f"⚠️ TTS fallback: {e}")
-        tts = gTTS(text=text, lang='en', slow=False, tld="com.au")
-        tts.save("fallback.mp3")
-        playsound3.playsound("fallback.mp3")
-        os.remove("fallback.mp3")
+        engine = pyttsx3.init()
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices.id)  # Set to male voice (index 0)
+        engine.say("Hello, this is a male voice.")
+        engine.runAndWait()
 
 def ask_openai_conversation(user_input, system_prompt):
     try:
@@ -105,7 +108,7 @@ def ask_groq(user_input):
         response = groq_client.chat.completions.create(
             model="llama-3.3-70b-versatile",
             messages=[
-                {"role": "system", "content": "You are Ascleon, a kind, gentle healthcare companion."},
+                {"role": "system", "content": "You are Ascleon, a kind, friendly healthcare companion."},
                 {"role": "user", "content": user_input}
             ]
         )
