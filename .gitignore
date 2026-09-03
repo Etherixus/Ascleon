@@ -1,0 +1,27 @@
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Generated audio artifacts (GPT-Wrapper.py writes these to the CWD)
+/speech.mp3
+/speech_robotic.mp3
+/test_audio.wav
+
+# Archives / snapshots
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
