@@ -19,7 +19,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # === ⚙️ Voice options ===
-# Set to True to post-process TTS output with a robotic Baymax-like effect.
+# Set to True to post-process TTS output with a robotic voice effect.
 ROBOTIC_VOICE = True
 # Set to True to prefer a local male-sounding voice via pyttsx3.
 # If pyttsx3 isn't installed, the code will fall back to gTTS.

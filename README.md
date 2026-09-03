@@ -1,6 +1,6 @@
-# Baymax Project
+# Ascleon Project
 
-A full-stack interdisciplinary project to design, prototype, and build a Baymax-inspired soft healthcare robot.  
+A full-stack interdisciplinary project to design, prototype, and build a soft healthcare companion robot.  
 This project combines mechanical engineering, software development, sensor integration, and AI-driven interaction.
 
 ---
@@ -27,7 +27,7 @@ This project combines mechanical engineering, software development, sensor integ
 ## 📂 Repository Structure
 
 ```bash
-baymax-project/
+ascleon-project/
 │
 ├── docs/               # Design documents, meeting notes, research
 │   ├── hardware-design/ 
